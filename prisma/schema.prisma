@@ -1,0 +1,115 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id             String           @id @default(cuid())
+  name           String
+  email          String           @unique
+  passwordHash   String
+  role           String           @default("USER")
+  createdAt      DateTime         @default(now())
+  updatedAt      DateTime         @updatedAt
+  videoProgress  VideoProgress[]
+  quizResults    QuizResult[]
+  lessonProgress LessonProgress[]
+}
+
+model Lesson {
+  id             String           @id @default(cuid())
+  title          String
+  slug           String           @unique
+  description    String
+  content        String
+  imageUrl       String?
+  order          Int              @default(0)
+  createdAt      DateTime         @default(now())
+  updatedAt      DateTime         @updatedAt
+  lessonProgress LessonProgress[]
+}
+
+model VideoLesson {
+  id             String           @id @default(cuid())
+  title          String
+  slug           String           @unique
+  description    String
+  youtubeUrl     String
+  youtubeId      String
+  thumbnailUrl   String
+  category       String
+  level          String
+  duration       String
+  order          Int              @default(0)
+  relatedSignIds String?
+  createdAt      DateTime         @default(now())
+  updatedAt      DateTime         @updatedAt
+  videoProgress  VideoProgress[]
+}
+
+model VideoProgress {
+  id            String      @id @default(cuid())
+  userId        String
+  videoLessonId String
+  watched       Boolean     @default(false)
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
+  user          User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  videoLesson   VideoLesson @relation(fields: [videoLessonId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, videoLessonId])
+}
+
+model RoadSign {
+  id               String   @id @default(cuid())
+  name             String
+  code             String   @unique
+  category         String
+  description      String
+  meaning          String
+  correctPlacement String
+  svgType          String
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+}
+
+model QuizQuestion {
+  id            String   @id @default(cuid())
+  question      String
+  optionA       String
+  optionB       String
+  optionC       String
+  optionD       String
+  correctOption String
+  explanation   String
+  topic         String
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+model QuizResult {
+  id         String   @id @default(cuid())
+  userId     String
+  score      Int
+  total      Int
+  percentage Float
+  createdAt  DateTime @default(now())
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model LessonProgress {
+  id        String   @id @default(cuid())
+  userId    String
+  lessonId  String
+  completed Boolean  @default(false)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  lesson    Lesson   @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, lessonId])
+}
