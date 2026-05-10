@@ -17,13 +17,11 @@ async function main() {
     create: { name: "Ruslan", email: "admin@example.com", passwordHash: adminHash, role: "ADMIN" }
   });
 
-  for (const email of ["student@example.com", "driver@example.com"]) {
-    await prisma.user.upsert({
-      where: { email },
-      update: {},
-      create: { name: email.split("@")[0], email, passwordHash: userHash, role: "USER" }
-    });
-  }
+  await prisma.user.upsert({
+    where: { email: "student@example.com" },
+    update: { name: "Paydalanıwshı", role: "USER" },
+    create: { name: "Paydalanıwshı", email: "student@example.com", passwordHash: userHash, role: "USER" }
+  });
 
   for (const lesson of lessons) {
     await prisma.lesson.upsert({ where: { slug: lesson.slug }, update: lesson, create: lesson });

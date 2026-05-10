@@ -36,7 +36,7 @@ export async function clearSession() {
 export async function getCurrentUser() {
   const jar = await cookies();
   const token = jar.get(COOKIE_NAME)?.value;
-  if (!token) return getDemoAdmin();
+  if (!token) return null;
   const parts = token.split(".");
   if (parts.length < 3) return null;
   const signature = parts.pop()!;
