@@ -25,7 +25,7 @@ export default async function SignDetail({ params }: { params: Promise<{ id: str
           <div className="mt-6 grid gap-4 md:grid-cols-2">
             <Info title="Belginiń mánisi" text={sign.meaning} />
             <Info title="Haydawshı ushın mánisi" text="Belgi kóringen aymaqta tezlikti, baǵıttı hám ústinlikti durıs tańlaw kerek." />
-            <Info title="Jayaú júrginshi ushın mánisi" text="Jol jaǵdayın baqlap, belgilengen qáwipsiz aymaqtan paydalanıw kerek." />
+            <Info title="Jayaw júriwshi ushın mánisi" text="Jol jaǵdayın baqlap, belgilengen qáwipsiz aymaqtan paydalanıw kerek." />
             <Info title="Qollanılıw ornı" text={sign.correctPlacement} />
           </div>
         </div>

@@ -270,11 +270,11 @@ export const roadSigns = [
     "svgType": "https://uzavtoyolbelgi.uz/uploads/store/product/c32aa75e2f2e33c313afe4feb3f86195.gif"
   },
   {
-    "name": "1.20 Jayaú júrginshiler ótiw ornı",
+    "name": "1.20 Jayaw júriwshiler ótiw ornı",
     "code": "1-20",
     "category": "Eskertiwshi belgiler",
     "description": "Eskertiwshi belgiler toparındaǵı rásmiy jol belgisi.",
-    "meaning": "1.20 Jayaú júrginshiler ótiw ornı belgisi jol qatnasıwshılarına tiyisli háreket tártibin kórsetedi.",
+    "meaning": "1.20 Jayaw júriwshiler ótiw ornı belgisi jol qatnasıwshılarına tiyisli háreket tártibin kórsetedi.",
     "correctPlacement": "Jol háreketi qaǵıydaları boyınsha belgilengen orınlarda qollanıladı.",
     "svgType": "https://uzavtoyolbelgi.uz/uploads/store/product/e6fcea8ed20a3f1aebaffa7517c0a1d2.gif"
   },
@@ -576,11 +576,11 @@ export const roadSigns = [
     "svgType": "https://uzavtoyolbelgi.uz/uploads/store/product/372acb948e6387606672606f013958d9.gif"
   },
   {
-    "name": "3.10 Jayaú júrginshilerdin háreketleniwine tıyım salınǵan",
+    "name": "3.10 Jayaw júriwshilerdiń háreketleniwine tıyım salınǵan",
     "code": "3-10",
     "category": "Tıyım salıwshı belgiler",
     "description": "Tıyım salıwshı belgiler toparındaǵı rásmiy jol belgisi.",
-    "meaning": "3.10 Jayaú júrginshilerdin háreketleniwine tıyım salınǵan belgisi jol qatnasıwshılarına tiyisli háreket tártibin kórsetedi.",
+    "meaning": "3.10 Jayaw júriwshilerdiń háreketleniwine tıyım salınǵan belgisi jol qatnasıwshılarına tiyisli háreket tártibin kórsetedi.",
     "correctPlacement": "Jol háreketi qaǵıydaları boyınsha belgilengen orınlarda qollanıladı.",
     "svgType": "https://uzavtoyolbelgi.uz/uploads/store/product/7294235c1347b3a8e51e02053441cf1d.png"
   },
@@ -918,65 +918,65 @@ export const roadSigns = [
     "svgType": "https://uzavtoyolbelgi.uz/uploads/store/product/57a603e46df425bff59a805934643724.gif"
   },
   {
-    "name": "4.6 Jayaú júrginshiler jolkasi",
+    "name": "4.6 Jayaw júriwshiler jolkasi",
     "code": "4-6",
     "category": "Buyırıwshı belgiler",
     "description": "Buyırıwshı belgiler toparındaǵı rásmiy jol belgisi.",
-    "meaning": "4.6 Jayaú júrginshiler jolkasi belgisi jol qatnasıwshılarına tiyisli háreket tártibin kórsetedi.",
+    "meaning": "4.6 Jayaw júriwshiler jolkasi belgisi jol qatnasıwshılarına tiyisli háreket tártibin kórsetedi.",
     "correctPlacement": "Jol háreketi qaǵıydaları boyınsha belgilengen orınlarda qollanıladı.",
     "svgType": "https://uzavtoyolbelgi.uz/uploads/store/product/669265baf1c54d979e7f311f127f1181.gif"
   },
   {
-    "name": "4.6.1 Jayaú júrginshi hám velosipedler birge háreketleniw jolı",
+    "name": "4.6.1 Jayaw júriwshi hám velosipedler birge háreketleniw jolı",
     "code": "4-6-1",
     "category": "Buyırıwshı belgiler",
     "description": "Buyırıwshı belgiler toparındaǵı rásmiy jol belgisi.",
-    "meaning": "4.6.1 Jayaú júrginshi hám velosipedler birge háreketleniw jolı belgisi jol qatnasıwshılarına tiyisli háreket tártibin kórsetedi.",
+    "meaning": "4.6.1 Jayaw júriwshi hám velosipedler birge háreketleniw jolı belgisi jol qatnasıwshılarına tiyisli háreket tártibin kórsetedi.",
     "correctPlacement": "Jol háreketi qaǵıydaları boyınsha belgilengen orınlarda qollanıladı.",
     "svgType": "https://uzavtoyolbelgi.uz/uploads/store/product/23b76430964595a76f04616feb3d8d88.jpg"
   },
   {
-    "name": "4.6.2 Jayaú júrginshi hám velosipedler birge háreketleniw jolınin aqırı",
+    "name": "4.6.2 Jayaw júriwshi hám velosipedler birge háreketleniw jolınin aqırı",
     "code": "4-6-2",
     "category": "Buyırıwshı belgiler",
     "description": "Buyırıwshı belgiler toparındaǵı rásmiy jol belgisi.",
-    "meaning": "4.6.2 Jayaú júrginshi hám velosipedler birge háreketleniw jolınin aqırı belgisi jol qatnasıwshılarına tiyisli háreket tártibin kórsetedi.",
+    "meaning": "4.6.2 Jayaw júriwshi hám velosipedler birge háreketleniw jolınin aqırı belgisi jol qatnasıwshılarına tiyisli háreket tártibin kórsetedi.",
     "correctPlacement": "Jol háreketi qaǵıydaları boyınsha belgilengen orınlarda qollanıladı.",
     "svgType": "https://uzavtoyolbelgi.uz/uploads/store/product/a098be5c2c9c5d29197b46844e7b5687.jpg"
   },
   {
-    "name": "4.6.3 Ajiratilgan jayaú júrginshi hám velosiped háreketleniw jolı",
+    "name": "4.6.3 Ajiratilgan jayaw júriwshi hám velosiped háreketleniw jolı",
     "code": "4-6-3",
     "category": "Buyırıwshı belgiler",
     "description": "Buyırıwshı belgiler toparındaǵı rásmiy jol belgisi.",
-    "meaning": "4.6.3 Ajiratilgan jayaú júrginshi hám velosiped háreketleniw jolı belgisi jol qatnasıwshılarına tiyisli háreket tártibin kórsetedi.",
+    "meaning": "4.6.3 Ajiratilgan jayaw júriwshi hám velosiped háreketleniw jolı belgisi jol qatnasıwshılarına tiyisli háreket tártibin kórsetedi.",
     "correctPlacement": "Jol háreketi qaǵıydaları boyınsha belgilengen orınlarda qollanıladı.",
     "svgType": "https://uzavtoyolbelgi.uz/uploads/store/product/cfae42144c19c0fcac0a2e97f1379e56.jpg"
   },
   {
-    "name": "4.6.4 Ajiratilgan jayaú júrginshi hám velosiped háreketleniw jolınin aqırı",
+    "name": "4.6.4 Ajiratilgan jayaw júriwshi hám velosiped háreketleniw jolınin aqırı",
     "code": "4-6-4",
     "category": "Buyırıwshı belgiler",
     "description": "Buyırıwshı belgiler toparındaǵı rásmiy jol belgisi.",
-    "meaning": "4.6.4 Ajiratilgan jayaú júrginshi hám velosiped háreketleniw jolınin aqırı belgisi jol qatnasıwshılarına tiyisli háreket tártibin kórsetedi.",
+    "meaning": "4.6.4 Ajiratilgan jayaw júriwshi hám velosiped háreketleniw jolınin aqırı belgisi jol qatnasıwshılarına tiyisli háreket tártibin kórsetedi.",
     "correctPlacement": "Jol háreketi qaǵıydaları boyınsha belgilengen orınlarda qollanıladı.",
     "svgType": "https://uzavtoyolbelgi.uz/uploads/store/product/63329ad861f3847ef2c38d7cc91f3c95.jpg"
   },
   {
-    "name": "4.6.5 Ajiratilgan jayaú júrginshi hám velosiped háreketleniw jolı",
+    "name": "4.6.5 Ajiratilgan jayaw júriwshi hám velosiped háreketleniw jolı",
     "code": "4-6-5",
     "category": "Buyırıwshı belgiler",
     "description": "Buyırıwshı belgiler toparındaǵı rásmiy jol belgisi.",
-    "meaning": "4.6.5 Ajiratilgan jayaú júrginshi hám velosiped háreketleniw jolı belgisi jol qatnasıwshılarına tiyisli háreket tártibin kórsetedi.",
+    "meaning": "4.6.5 Ajiratilgan jayaw júriwshi hám velosiped háreketleniw jolı belgisi jol qatnasıwshılarına tiyisli háreket tártibin kórsetedi.",
     "correctPlacement": "Jol háreketi qaǵıydaları boyınsha belgilengen orınlarda qollanıladı.",
     "svgType": "https://uzavtoyolbelgi.uz/uploads/store/product/6b98ac33089244a7b9fa50d261b6e0a7.jpg"
   },
   {
-    "name": "4.6.6 Ajiratilgan jayaú júrginshi hám velosiped háreketleniw jolınin aqırı",
+    "name": "4.6.6 Ajiratilgan jayaw júriwshi hám velosiped háreketleniw jolınin aqırı",
     "code": "4-6-6",
     "category": "Buyırıwshı belgiler",
     "description": "Buyırıwshı belgiler toparındaǵı rásmiy jol belgisi.",
-    "meaning": "4.6.6 Ajiratilgan jayaú júrginshi hám velosiped háreketleniw jolınin aqırı belgisi jol qatnasıwshılarına tiyisli háreket tártibin kórsetedi.",
+    "meaning": "4.6.6 Ajiratilgan jayaw júriwshi hám velosiped háreketleniw jolınin aqırı belgisi jol qatnasıwshılarına tiyisli háreket tártibin kórsetedi.",
     "correctPlacement": "Jol háreketi qaǵıydaları boyınsha belgilengen orınlarda qollanıladı.",
     "svgType": "https://uzavtoyolbelgi.uz/uploads/store/product/9128fc2b567d8b243713d47ee82a2815.jpg"
   },
@@ -1332,56 +1332,56 @@ export const roadSigns = [
     "svgType": "https://uzavtoyolbelgi.uz/uploads/store/product/05681a3e4b016ae9db26fa64060dca39.gif"
   },
   {
-    "name": "5.16.1 Jayaú júrginshiler ótiw ornı",
+    "name": "5.16.1 Jayaw júriwshiler ótiw ornı",
     "code": "5-16-1",
     "category": "Axborot-kórsetkish belgiler",
     "description": "Axborot-kórsetkish belgiler toparındaǵı rásmiy jol belgisi.",
-    "meaning": "5.16.1 Jayaú júrginshiler ótiw ornı belgisi jol qatnasıwshılarına tiyisli háreket tártibin kórsetedi.",
+    "meaning": "5.16.1 Jayaw júriwshiler ótiw ornı belgisi jol qatnasıwshılarına tiyisli háreket tártibin kórsetedi.",
     "correctPlacement": "Jol háreketi qaǵıydaları boyınsha belgilengen orınlarda qollanıladı.",
     "svgType": "https://uzavtoyolbelgi.uz/uploads/store/product/78199853c2178564d1e71455dbeff35f.gif"
   },
   {
-    "name": "5.16.2 Jayaú júrginshiler ótiw ornı",
+    "name": "5.16.2 Jayaw júriwshiler ótiw ornı",
     "code": "5-16-2",
     "category": "Axborot-kórsetkish belgiler",
     "description": "Axborot-kórsetkish belgiler toparındaǵı rásmiy jol belgisi.",
-    "meaning": "5.16.2 Jayaú júrginshiler ótiw ornı belgisi jol qatnasıwshılarına tiyisli háreket tártibin kórsetedi.",
+    "meaning": "5.16.2 Jayaw júriwshiler ótiw ornı belgisi jol qatnasıwshılarına tiyisli háreket tártibin kórsetedi.",
     "correctPlacement": "Jol háreketi qaǵıydaları boyınsha belgilengen orınlarda qollanıladı.",
     "svgType": "https://uzavtoyolbelgi.uz/uploads/store/product/3ea5e2a0400ec3c6d0e1e05b1c9f5943.gif"
   },
   {
-    "name": "5.17.1 Jayaú júrginshilerdiń jer astınan ótiw ornı",
+    "name": "5.17.1 Jayaw júriwshilerdiń jer astınan ótiw ornı",
     "code": "5-17-1",
     "category": "Axborot-kórsetkish belgiler",
     "description": "Axborot-kórsetkish belgiler toparındaǵı rásmiy jol belgisi.",
-    "meaning": "5.17.1 Jayaú júrginshilerdiń jer astınan ótiw ornı belgisi jol qatnasıwshılarına tiyisli háreket tártibin kórsetedi.",
+    "meaning": "5.17.1 Jayaw júriwshilerdiń jer astınan ótiw ornı belgisi jol qatnasıwshılarına tiyisli háreket tártibin kórsetedi.",
     "correctPlacement": "Jol háreketi qaǵıydaları boyınsha belgilengen orınlarda qollanıladı.",
     "svgType": "https://uzavtoyolbelgi.uz/uploads/store/product/6acac287e17b2ead1af0df48b1c565fc.gif"
   },
   {
-    "name": "5.17.2 Jayaú júrginshilerdiń jer astınan ótiw ornı",
+    "name": "5.17.2 Jayaw júriwshilerdiń jer astınan ótiw ornı",
     "code": "5-17-2",
     "category": "Axborot-kórsetkish belgiler",
     "description": "Axborot-kórsetkish belgiler toparındaǵı rásmiy jol belgisi.",
-    "meaning": "5.17.2 Jayaú júrginshilerdiń jer astınan ótiw ornı belgisi jol qatnasıwshılarına tiyisli háreket tártibin kórsetedi.",
+    "meaning": "5.17.2 Jayaw júriwshilerdiń jer astınan ótiw ornı belgisi jol qatnasıwshılarına tiyisli háreket tártibin kórsetedi.",
     "correctPlacement": "Jol háreketi qaǵıydaları boyınsha belgilengen orınlarda qollanıladı.",
     "svgType": "https://uzavtoyolbelgi.uz/uploads/store/product/de75a618354d280f46e751d817a40518.gif"
   },
   {
-    "name": "5.17.3 Jayaú júrginshilerdiń jer ústinen ótiw ornı",
+    "name": "5.17.3 Jayaw júriwshilerdiń jer ústinen ótiw ornı",
     "code": "5-17-3",
     "category": "Axborot-kórsetkish belgiler",
     "description": "Axborot-kórsetkish belgiler toparındaǵı rásmiy jol belgisi.",
-    "meaning": "5.17.3 Jayaú júrginshilerdiń jer ústinen ótiw ornı belgisi jol qatnasıwshılarına tiyisli háreket tártibin kórsetedi.",
+    "meaning": "5.17.3 Jayaw júriwshilerdiń jer ústinen ótiw ornı belgisi jol qatnasıwshılarına tiyisli háreket tártibin kórsetedi.",
     "correctPlacement": "Jol háreketi qaǵıydaları boyınsha belgilengen orınlarda qollanıladı.",
     "svgType": "https://uzavtoyolbelgi.uz/uploads/store/product/35591951348d4392c744d94b63c79be4.gif"
   },
   {
-    "name": "5.17.4 Jayaú júrginshilerdiń jer ústinen ótiw ornı",
+    "name": "5.17.4 Jayaw júriwshilerdiń jer ústinen ótiw ornı",
     "code": "5-17-4",
     "category": "Axborot-kórsetkish belgiler",
     "description": "Axborot-kórsetkish belgiler toparındaǵı rásmiy jol belgisi.",
-    "meaning": "5.17.4 Jayaú júrginshilerdiń jer ústinen ótiw ornı belgisi jol qatnasıwshılarına tiyisli háreket tártibin kórsetedi.",
+    "meaning": "5.17.4 Jayaw júriwshilerdiń jer ústinen ótiw ornı belgisi jol qatnasıwshılarına tiyisli háreket tártibin kórsetedi.",
     "correctPlacement": "Jol háreketi qaǵıydaları boyınsha belgilengen orınlarda qollanıladı.",
     "svgType": "https://uzavtoyolbelgi.uz/uploads/store/product/5b8809f8e68f5b4b3bbe6564ea8ce79b.gif"
   },
@@ -2322,11 +2322,11 @@ export const roadSigns = [
     "svgType": "https://uzavtoyolbelgi.uz/uploads/store/product/1197d7f9245fe6c9f3a12aa749b807a9.gif"
   },
   {
-    "name": "7.15 Kózi ázzi jayaú júrginshiler",
+    "name": "7.15 Kózi ázzi jayaw júriwshiler",
     "code": "7-15",
     "category": "Qosımsha axborot belgileri",
     "description": "Qosımsha axborot belgileri toparındaǵı rásmiy jol belgisi.",
-    "meaning": "7.15 Kózi ázzi jayaú júrginshiler belgisi jol qatnasıwshılarına tiyisli háreket tártibin kórsetedi.",
+    "meaning": "7.15 Kózi ázzi jayaw júriwshiler belgisi jol qatnasıwshılarına tiyisli háreket tártibin kórsetedi.",
     "correctPlacement": "Jol háreketi qaǵıydaları boyınsha belgilengen orınlarda qollanıladı.",
     "svgType": "https://uzavtoyolbelgi.uz/uploads/store/product/bc702128f86c8393a8beef9682a50eeb.gif"
   },

@@ -29,7 +29,7 @@ const videos = [
   },
   {
     title: "Tártipke salıwshı",
-    description: "Tártipke salıwshınıń isharaları, haydawshı hám jayaú júrginshi ushın beriletuǵın belgilerdi durıs túsiniw boyınsha video sabaq.",
+    description: "Tártipke salıwshınıń isharaları, haydawshı hám jayaw júriwshi ushın beriletuǵın belgilerdi durıs túsiniw boyınsha video sabaq.",
     category: "Tártipke salıwshı",
     level: "Orta",
     duration: "Sabaq",

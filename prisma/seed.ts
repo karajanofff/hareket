@@ -7,6 +7,26 @@ import { quizQuestions } from "../data/quizQuestions";
 
 const prisma = new PrismaClient();
 
+function normalizePedestrianTerm(value: string) {
+  return value
+    .replaceAll("Jayaú júrginshilerdiń", "Jayaw júriwshilerdiń")
+    .replaceAll("jayaú júrginshilerdiń", "jayaw júriwshilerdiń")
+    .replaceAll("Jayaú júrginshilerge", "Jayaw júriwshilerge")
+    .replaceAll("jayaú júrginshilerge", "jayaw júriwshilerge")
+    .replaceAll("Jayaú júrginshilerdi", "Jayaw júriwshilerdi")
+    .replaceAll("jayaú júrginshilerdi", "jayaw júriwshilerdi")
+    .replaceAll("Jayaú júrginshiler", "Jayaw júriwshiler")
+    .replaceAll("jayaú júrginshiler", "jayaw júriwshiler")
+    .replaceAll("Jayaú júrginshiniń", "Jayaw júriwshiniń")
+    .replaceAll("jayaú júrginshiniń", "jayaw júriwshiniń")
+    .replaceAll("Jayaú júrginshige", "Jayaw júriwshige")
+    .replaceAll("jayaú júrginshige", "jayaw júriwshige")
+    .replaceAll("Jayaú júrginshini", "Jayaw júriwshini")
+    .replaceAll("jayaú júrginshini", "jayaw júriwshini")
+    .replaceAll("Jayaú júrginshi", "Jayaw júriwshi")
+    .replaceAll("jayaú júrginshi", "jayaw júriwshi");
+}
+
 async function main() {
   const adminHash = await bcrypt.hash("admin12345", 10);
   const userHash = await bcrypt.hash("user12345", 10);
@@ -36,6 +56,30 @@ async function main() {
 
   const questionCount = await prisma.quizQuestion.count();
   if (questionCount === 0) await prisma.quizQuestion.createMany({ data: quizQuestions });
+
+  const existingQuestions = await prisma.quizQuestion.findMany();
+  for (const question of existingQuestions) {
+    const next = {
+      question: normalizePedestrianTerm(question.question),
+      optionA: normalizePedestrianTerm(question.optionA),
+      optionB: normalizePedestrianTerm(question.optionB),
+      optionC: normalizePedestrianTerm(question.optionC),
+      optionD: normalizePedestrianTerm(question.optionD),
+      explanation: normalizePedestrianTerm(question.explanation),
+      topic: normalizePedestrianTerm(question.topic)
+    };
+    if (
+      next.question !== question.question ||
+      next.optionA !== question.optionA ||
+      next.optionB !== question.optionB ||
+      next.optionC !== question.optionC ||
+      next.optionD !== question.optionD ||
+      next.explanation !== question.explanation ||
+      next.topic !== question.topic
+    ) {
+      await prisma.quizQuestion.update({ where: { id: question.id }, data: next });
+    }
+  }
 }
 
 main()

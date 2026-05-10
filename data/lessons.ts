@@ -3,7 +3,7 @@ export const lessons = [
     title: "Jol háreketi qaǵıydalarınıń áhmiyeti",
     slug: "jol-hareketi-qagiydalari-ahmiyeti",
     description: "Qáwipsiz háreket mádeniyatı, juwapkerlik hám jol qatnasıwshıları arasındaǵı tártip.",
-    content: "Jol háreketi qaǵıydaları haydawshı, jayaú júrginshi hám basqa jol qatnasıwshılarınıń qáwipsizligin támiyinleydi. Qaǵıydalardı biliw jol apatlarınıń aldın aladı, waqıttı únemleydi hám jámiyette tártip qáliplestiredi. Kompyuter grafikası jol belgilerin, kesilispe jaǵdayların hám svetofor signalların tez hám anıq túsiniwge járdem beredi.",
+    content: "Jol háreketi qaǵıydaları haydawshı, jayaw júriwshi hám basqa jol qatnasıwshılarınıń qáwipsizligin támiyinleydi. Qaǵıydalardı biliw jol apatlarınıń aldın aladı, waqıttı únemleydi hám jámiyette tártip qáliplestiredi. Kompyuter grafikası jol belgilerin, kesilispe jaǵdayların hám svetofor signalların tez hám anıq túsiniwge járdem beredi.",
     imageUrl: "/road-lesson.svg",
     order: 1
   },
@@ -11,7 +11,7 @@ export const lessons = [
     title: "Svetofor signalları",
     slug: "svetofor-signallari",
     description: "Qızıl, sarı hám jasıl signallardıń mánisi, hár biri boyınsha háreket tártipleri.",
-    content: "Qızıl signal toqtawdı, sarı signal abay bolıwdı, jasıl signal bolsa háreket etiwge ruxsat etilgenin bildiredi. Qosımsha sekciyalar burılıw baǵıtların kórsetedi. Jayaú júrginshiler de ózlerine arnalǵan svetofor signallarına ámel etiwi kerek.",
+    content: "Qızıl signal toqtawdı, sarı signal abay bolıwdı, jasıl signal bolsa háreket etiwge ruxsat etilgenin bildiredi. Qosımsha sekciyalar burılıw baǵıtların kórsetedi. Jayaw júriwshiler de ózlerine arnalǵan svetofor signallarına ámel etiwi kerek.",
     imageUrl: "/traffic-light.svg",
     order: 2
   },
@@ -40,10 +40,10 @@ export const lessons = [
     order: 5
   },
   {
-    title: "Jayaú júrginshiler qáwipsizligi",
+    title: "Jayaw júriwshiler qáwipsizligi",
     slug: "jayau-jurginshiler-qawipsizligi",
-    description: "Jayaú júrginshi ótpe jolı, jayaú júrginshi svetoforı, mektep aymaqları hám keń tarqalǵan qáteler.",
-    content: "Jayaú júrginshi belgilengen ótpe jollarınan ótiwi, svetofor signalına ámel etiwi hám transport aǵımın baqlawı kerek. Haydawshı jayaú júrginshi ótpe jolına jaqınlasqanda tezlikti páseytip, jayaú júrginshige jol beriwi shárt.",
+    description: "Jayaw júriwshi ótpe jolı, jayaw júriwshi svetoforı, mektep aymaqları hám keń tarqalǵan qáteler.",
+    content: "Jayaw júriwshi belgilengen ótpe jollarınan ótiwi, svetofor signalına ámel etiwi hám transport aǵımın baqlawı kerek. Haydawshı jayaw júriwshi ótpe jolına jaqınlasqanda tezlikti páseytip, jayaw júriwshige jol beriwi shárt.",
     imageUrl: "/pedestrian.svg",
     order: 6
   }

@@ -4,7 +4,7 @@ export const quizQuestions = [
     optionA: "Toqtaw sızıǵı aldında tolıq toqtaw",
     optionB: "Tezlikti asırıp ótip ketiw",
     optionC: "Signalǵa qaramay burılıw",
-    optionD: "Jayaú júrginshilerge jol bermew",
+    optionD: "Jayaw júriwshilerge jol bermew",
     correctOption: "A",
     explanation: "Qızıl signal háreketti toqtatadı. Haydawshı toqtaw sızıǵı aldında tolıq toqtawı kerek.",
     topic: "Svetofor"
@@ -23,7 +23,7 @@ export const quizQuestions = [
     question: "Jasıl svetofor signalı janǵanda haydawshı qanday shárt penen háreket etedi?",
     optionA: "Jol jaǵdayı qáwipsiz bolsa háreket etedi",
     optionB: "Hár qanday tezlikte júre beredi",
-    optionC: "Jayaú júrginshilerdi esapqa almaydı",
+    optionC: "Jayaw júriwshilerdi esapqa almaydı",
     optionD: "Qarşı baǵıttaǵı jolǵa shıǵadı",
     correctOption: "A",
     explanation: "Jasıl signal ruxsat beredi, biraq haydawshı jol jaǵdayın hám basqa qatnasıwshılardı baqlawı kerek.",
@@ -40,14 +40,14 @@ export const quizQuestions = [
     topic: "Jol belgileri"
   },
   {
-    question: "Jayaú júrginshi ótiw ornına jaqınlasqanda haydawshı nege itibar beredi?",
-    optionA: "Tezlikti páseytip, jayaú júrginshige jol beriwge",
+    question: "Jayaw júriwshi ótiw ornına jaqınlasqanda haydawshı nege itibar beredi?",
+    optionA: "Tezlikti páseytip, jayaw júriwshige jol beriwge",
     optionB: "Dawıs signalın úzliksiz basıwǵa",
     optionC: "Ótiw ornında tezlikti asırıwǵa",
-    optionD: "Jayaú júrginshiniń baǵıtına qaramawǵa",
+    optionD: "Jayaw júriwshiniń baǵıtına qaramawǵa",
     correctOption: "A",
-    explanation: "Jayaú júrginshi ótiw ornında haydawshı qáwipsizlikti támiyinlep, jol beriwge tayar bolıwı kerek.",
-    topic: "Jayaú júrginshi"
+    explanation: "Jayaw júriwshi ótiw ornında haydawshı qáwipsizlikti támiyinlep, jol beriwge tayar bolıwı kerek.",
+    topic: "Jayaw júriwshi"
   },
   {
     question: "Kesilispede ústinlik qanday anıqlanadı?",
@@ -84,7 +84,7 @@ export const quizQuestions = [
     optionA: "Qáwipli yamasa ruqsat etilmegen háreketlerdi sheklew ushın",
     optionB: "Haydawshını tezirek júriwge shaqırıw ushın",
     optionC: "Tek jol shetin bezew ushın",
-    optionD: "Jayaú júrginshilerge test beriw ushın",
+    optionD: "Jayaw júriwshilerge test beriw ushın",
     correctOption: "A",
     explanation: "Tıyım salıwshı belgiler qáwipsiz emes háreketlerdi shekleydi yamasa toqtatadı.",
     topic: "Jol belgileri"
@@ -117,7 +117,7 @@ export const quizQuestions = [
     optionD: "Tek arttaǵı transportqa qaraw",
     correctOption: "A",
     explanation: "Mektep aymaǵında balalardıń kútilmegen háreketi múmkin, sonıń ushın abaylıq kerek.",
-    topic: "Jayaú júrginshi"
+    topic: "Jayaw júriwshi"
   },
   {
     question: "Aldındaǵı transport burılıw signalın jaqqanda ne islew durıs?",
@@ -180,23 +180,23 @@ export const quizQuestions = [
     topic: "Qáwipsiz háreket"
   },
   {
-    question: "Jayaú júrginshi qızıl signalda jolǵa shıqsa, haydawshı ne islewi kerek?",
+    question: "Jayaw júriwshi qızıl signalda jolǵa shıqsa, haydawshı ne islewi kerek?",
     optionA: "Qáwipsizlik ushın tezlikti azaytıp, toqtawǵa tayar bolıw",
     optionB: "Signal onıki qızıl dep tezleniw",
-    optionC: "Jayaú júrginshini qıstap ótiw",
+    optionC: "Jayaw júriwshini qıstap ótiw",
     optionD: "Faranı óshirip ótiw",
     correctOption: "A",
     explanation: "Haydawshı qaǵıydanı buzǵan qatnasıwshı bolsa da apat aldın alıwǵa háreket etedi.",
-    topic: "Jayaú júrginshi"
+    topic: "Jayaw júriwshi"
   },
   {
     question: "Kesilispede burılıw waqtında qay jerge qaraw áhmiyetli?",
-    optionA: "Jayaú júrginshi ótiw ornı hám qarama-qarsı transportqa",
+    optionA: "Jayaw júriwshi ótiw ornı hám qarama-qarsı transportqa",
     optionB: "Tek rulǵa",
     optionC: "Tek artqı orınlıqqa",
     optionD: "Radio ekranına",
     correctOption: "A",
-    explanation: "Burılıw waqtında jayaú júrginshiler hám qarama-qarsı aǵım qáwip deregi bolıwı múmkin.",
+    explanation: "Burılıw waqtında jayaw júriwshiler hám qarama-qarsı aǵım qáwip deregi bolıwı múmkin.",
     topic: "Kesilispe"
   },
   {
@@ -251,7 +251,7 @@ export const quizQuestions = [
   },
   {
     question: "Qala ishinde tezlikti tańlawda neler esapqa alınadı?",
-    optionA: "Jayaú júrginshi, kesilispe, jol jaǵdayı hám belgiler",
+    optionA: "Jayaw júriwshi, kesilispe, jol jaǵdayı hám belgiler",
     optionB: "Tek avtomobildiń kúshi",
     optionC: "Tek haydawshınıń asıǵıwı",
     optionD: "Tek hawa rayınıń ıssılıǵı",
@@ -263,7 +263,7 @@ export const quizQuestions = [
     question: "Velosipedshi qatnasıwshı retinde qaysı qaǵıydalarǵa ámel etiwi kerek?",
     optionA: "Jol belgileri, svetofor hám qatar tártiplerine",
     optionB: "Tek óz qálewine",
-    optionC: "Tek jayaú júrginshi jolına",
+    optionC: "Tek jayaw júriwshi jolına",
     optionD: "Qaǵıydalar oǵan qatnaslı emes",
     correctOption: "A",
     explanation: "Velosipedshi de jol qatnasıwshısı, sonıń ushın qaǵıydalarǵa ámel etiwi kerek.",
@@ -271,13 +271,13 @@ export const quizQuestions = [
   },
   {
     question: "Avtobus toqtaw ornına jaqınlasqanda ne islew durıs?",
-    optionA: "Tezlikti azaytıp, jayaú júrginshilerge tayar bolıw",
+    optionA: "Tezlikti azaytıp, jayaw júriwshilerge tayar bolıw",
     optionB: "Avtobustıń aldınan tez ótiw",
     optionC: "Toqtaw ornında signal bermey tezleniw",
     optionD: "Jol shetine qaramaw",
     correctOption: "A",
-    explanation: "Avtobus toqtaw ornında jayaú júrginshiler kútilmegen jerde jolǵa shıǵıwı múmkin.",
-    topic: "Jayaú júrginshi"
+    explanation: "Avtobus toqtaw ornında jayaw júriwshiler kútilmegen jerde jolǵa shıǵıwı múmkin.",
+    topic: "Jayaw júriwshi"
   },
   {
     question: "Qarama-qarsı baǵıttaǵı qatarǵa shıǵıp basıp ótiw qashan qáwipli?",
@@ -371,7 +371,7 @@ export const quizQuestions = [
   },
   {
     question: "Jol shetinde toqtap turǵan avtomobildi aylanıp ótpekte nege itibar beriledi?",
-    optionA: "Esik ashılıwı, jayaú júrginshi hám qarama-qarsı transportqa",
+    optionA: "Esik ashılıwı, jayaw júriwshi hám qarama-qarsı transportqa",
     optionB: "Tek avtomobildiń reńine",
     optionC: "Tek signal dawısına",
     optionD: "Aralıqtı qısqartıwǵa",
