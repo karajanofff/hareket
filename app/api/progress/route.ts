@@ -1,10 +1,10 @@
-import { NextResponse } from "next/server";
 import { getCurrentUser } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
+import { localRedirect } from "@/lib/localRedirect";
 
 export async function POST(request: Request) {
   const user = await getCurrentUser();
-  if (!user) return NextResponse.redirect(new URL("/login", request.url));
+  if (!user) return localRedirect("/login", request);
   const form = await request.formData();
   const videoLessonId = String(form.get("videoLessonId") || "");
   if (videoLessonId) {
@@ -14,5 +14,5 @@ export async function POST(request: Request) {
       create: { userId: user.id, videoLessonId, watched: true }
     });
   }
-  return NextResponse.redirect(new URL("/dashboard", request.url));
+  return localRedirect("/dashboard", request);
 }
