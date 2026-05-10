@@ -14,7 +14,7 @@ export default function HomePage() {
       <Hero />
       <section className="page space-y-12">
         <div className="grid gap-4 md:grid-cols-4">
-          <StatCard title="Video sabaqlar" value={12} icon={Video} />
+          <StatCard title="Video sabaqlar" value={videoLessons.length} icon={Video} />
           <StatCard title="Jol belgileri" value={roadSigns.length} icon={CheckCircle2} />
           <StatCard title="Test sorawları" value={40} icon={Trophy} />
           <StatCard title="Sabaqlar" value={6} icon={BookOpen} />

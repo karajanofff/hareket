@@ -20,7 +20,7 @@ export default async function ResultsPage() {
         <StatCard title="Test tariyxı" value={results.length} icon={BarChart3} />
         <StatCard title="Ortasha nátiyje" value={`${avg}%`} icon={CheckCircle2} />
         <StatCard title="Eń jaqsı nátiyje" value={`${best}%`} icon={Award} />
-        <StatCard title="Kórilgen video sabaqlar" value={`${watched}/12`} icon={Video} />
+        <StatCard title="Kórilgen video sabaqlar" value={`${watched}/6`} icon={Video} />
       </div>
       <div className="glass p-6">
         <h2 className="mb-4 text-2xl font-black text-white">Ilgerilew grafikası</h2>

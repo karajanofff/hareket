@@ -29,9 +29,9 @@ async function main() {
     await prisma.lesson.upsert({ where: { slug: lesson.slug }, update: lesson, create: lesson });
   }
 
-  for (const video of videoLessons) {
-    await prisma.videoLesson.upsert({ where: { slug: video.slug }, update: video, create: video });
-  }
+  await prisma.videoProgress.deleteMany();
+  await prisma.videoLesson.deleteMany();
+  await prisma.videoLesson.createMany({ data: videoLessons });
 
   await prisma.roadSign.deleteMany();
   await prisma.roadSign.createMany({ data: roadSigns });
