@@ -33,9 +33,8 @@ async function main() {
     await prisma.videoLesson.upsert({ where: { slug: video.slug }, update: video, create: video });
   }
 
-  for (const sign of roadSigns) {
-    await prisma.roadSign.upsert({ where: { code: sign.code }, update: sign, create: sign });
-  }
+  await prisma.roadSign.deleteMany();
+  await prisma.roadSign.createMany({ data: roadSigns });
 
   await prisma.quizQuestion.deleteMany();
   await prisma.quizQuestion.createMany({ data: quizQuestions });
