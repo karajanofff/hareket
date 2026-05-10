@@ -37,10 +37,8 @@ async function main() {
     await prisma.roadSign.upsert({ where: { code: sign.code }, update: sign, create: sign });
   }
 
-  for (const q of quizQuestions) {
-    const existing = await prisma.quizQuestion.findFirst({ where: { question: q.question } });
-    if (!existing) await prisma.quizQuestion.create({ data: q });
-  }
+  await prisma.quizQuestion.deleteMany();
+  await prisma.quizQuestion.createMany({ data: quizQuestions });
 }
 
 main()
