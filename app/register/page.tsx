@@ -2,20 +2,26 @@ import Link from "next/link";
 
 export default function RegisterPage() {
   return (
-    <section className="page grid min-h-[70vh] place-items-center">
-      <form action="/api/auth/register" method="post" className="glass w-full max-w-md p-8">
-        <h1 className="text-3xl font-black text-white">Dizimnen ótiw</h1>
-        <p className="mt-2 text-slate-400">Oqıw ilgerilewińizdi saqlaw ushın akkaunt jaratıń.</p>
-        <label className="label mt-6">Atı</label>
-        <input className="input" name="name" required />
-        <label className="label mt-4">Email</label>
-        <input className="input" name="email" type="email" required />
-        <label className="label mt-4">Parol</label>
-        <input className="input" name="password" type="password" required />
-        <label className="label mt-4">Paroldı tastıyıqlaw</label>
-        <input className="input" name="confirmPassword" type="password" required />
-        <button className="btn-primary mt-6 w-full justify-center">Dizimnen ótiw</button>
-        <p className="mt-4 text-sm text-slate-400">Akkauntıńız bar ma? <Link className="text-cyan-200" href="/login">Kirisiw</Link></p>
+    <section className="page grid min-h-[72vh] place-items-center">
+      <form action="/api/auth/register" method="post" className="w-full max-w-lg rounded-lg border border-white/10 bg-white p-8 text-slate-900 shadow-2xl">
+        <h1 className="text-3xl font-black text-slate-950">Dizimnen ótiw</h1>
+        <p className="mt-3 text-slate-600">
+          Akkauntıńız bar ma? <Link className="font-semibold text-cyan-700 underline-offset-4 hover:underline" href="/login">Kirisiw</Link>
+        </p>
+
+        <label className="mt-8 block text-sm font-bold text-slate-950">Atı</label>
+        <input className="mt-2 w-full rounded border border-slate-300 bg-white px-4 py-3 text-slate-900 outline-none ring-cyan-500/20 transition focus:border-cyan-500 focus:ring-4" name="name" required />
+
+        <label className="mt-5 block text-sm font-bold text-slate-950">Email</label>
+        <input className="mt-2 w-full rounded border border-slate-300 bg-white px-4 py-3 text-slate-900 outline-none ring-cyan-500/20 transition focus:border-cyan-500 focus:ring-4" name="email" type="email" required />
+
+        <label className="mt-5 block text-sm font-bold text-slate-950">Parol</label>
+        <input className="mt-2 w-full rounded border border-slate-300 bg-white px-4 py-3 text-slate-900 outline-none ring-cyan-500/20 transition focus:border-cyan-500 focus:ring-4" name="password" type="password" required />
+
+        <label className="mt-5 block text-sm font-bold text-slate-950">Paroldı tastıyıqlaw</label>
+        <input className="mt-2 w-full rounded border border-slate-300 bg-white px-4 py-3 text-slate-900 outline-none ring-cyan-500/20 transition focus:border-cyan-500 focus:ring-4" name="confirmPassword" type="password" required />
+
+        <button className="mt-8 w-full rounded bg-cyan-500 px-4 py-3 font-bold text-slate-950 transition hover:bg-cyan-400">Dizimnen ótiw</button>
       </form>
     </section>
   );

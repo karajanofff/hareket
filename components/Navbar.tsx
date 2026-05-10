@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { getCurrentUser } from "@/lib/auth";
-import { Car, ShieldCheck, UserCircle } from "lucide-react";
+import { Car, LogIn, LogOut, ShieldCheck, UserCircle } from "lucide-react";
 
 const nav = [
   ["Bas bet", "/"],
@@ -13,8 +13,8 @@ const nav = [
 
 export async function Navbar() {
   const user = await getCurrentUser();
-  const isAdmin = user?.role === "ADMIN";
-  const isUser = user?.role === "USER";
+  const cabinetHref = user?.role === "ADMIN" ? "/admin" : "/dashboard";
+  const cabinetLabel = user?.role === "ADMIN" ? "Admin" : "Kabinet";
 
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-asphalt/82 backdrop-blur-xl">
@@ -35,24 +35,31 @@ export async function Navbar() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <Link
-            className={`flex items-center gap-2 rounded border px-3 py-2 text-sm font-semibold ${
-              isAdmin ? "border-amber-300/40 bg-amber-300/15 text-amber-100" : "border-cyan-300/20 bg-white/5 text-white hover:bg-white/10"
-            }`}
-            href="/api/auth/role?role=ADMIN"
-          >
-            <ShieldCheck size={18} />
-            <span>Admin</span>
-          </Link>
-          <Link
-            className={`flex items-center gap-2 rounded border px-3 py-2 text-sm font-semibold ${
-              isUser ? "border-cyan-300/40 bg-cyan-300/15 text-cyan-100" : "border-cyan-300/20 bg-white/5 text-white hover:bg-white/10"
-            }`}
-            href="/api/auth/role?role=USER"
-          >
-            <UserCircle size={18} />
-            <span>Paydalanıwshı</span>
-          </Link>
+          {user ? (
+            <>
+              <Link
+                className="flex items-center gap-2 rounded border border-cyan-300/20 bg-white/5 px-3 py-2 text-sm font-semibold text-white hover:bg-white/10"
+                href={cabinetHref}
+              >
+                {user.role === "ADMIN" ? <ShieldCheck size={18} /> : <UserCircle size={18} />}
+                <span>{cabinetLabel}</span>
+              </Link>
+              <form action="/api/auth/logout" method="post">
+                <button className="flex items-center gap-2 rounded border border-cyan-300/20 bg-white/5 px-3 py-2 text-sm font-semibold text-white hover:bg-white/10">
+                  <LogOut size={18} />
+                  <span>Shıǵıw</span>
+                </button>
+              </form>
+            </>
+          ) : (
+            <>
+              <Link className="flex items-center gap-2 rounded border border-cyan-300/20 bg-white/5 px-3 py-2 text-sm font-semibold text-white hover:bg-white/10" href="/login">
+                <LogIn size={18} />
+                <span>Kirisiw</span>
+              </Link>
+              <Link className="btn-primary px-4 py-2" href="/register">Dizimnen ótiw</Link>
+            </>
+          )}
         </div>
       </div>
     </header>
