@@ -23,14 +23,14 @@ export default async function SignDetail({ params }: { params: Promise<{ id: str
           <h1 className="text-4xl font-black text-white">{sign.name}</h1>
           <p className="mt-3 text-slate-300">{sign.description}</p>
           <div className="mt-6 grid gap-4 md:grid-cols-2">
-            <Info title="Belginin manisi" text={sign.meaning} />
-            <Info title="Haydawshi ushin manisi" text="Belgi koringen aymaqta tezlikti, bagitti ham ustinlikti duris tanlaw kerek." />
-            <Info title="Jayaw jurginshi ushin manisi" text="Jol jagdayin baqlap, belgilengen qawipsiz aymaqtan paydalaniw kerek." />
-            <Info title="Qollaniliw orni" text={sign.correctPlacement} />
+            <Info title="Belginiń mánisi" text={sign.meaning} />
+            <Info title="Haydawshı ushın mánisi" text="Belgi kóringen aymaqta tezlikti, baǵıttı hám ústinlikti durıs tańlaw kerek." />
+            <Info title="Jayaú júrginshi ushın mánisi" text="Jol jaǵdayın baqlap, belgilengen qáwipsiz aymaqtan paydalanıw kerek." />
+            <Info title="Qollanılıw ornı" text={sign.correctPlacement} />
           </div>
         </div>
         <div>
-          <h2 className="mb-4 text-2xl font-black text-white">Baylanisli video sabaqlar</h2>
+          <h2 className="mb-4 text-2xl font-black text-white">Baylanıslı video sabaqlar</h2>
           <div className="grid gap-5 md:grid-cols-2">{videos.slice(0, 2).map((v) => <VideoCard key={v.slug} video={v} />)}</div>
         </div>
       </article>

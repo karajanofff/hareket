@@ -13,8 +13,8 @@ export default async function AdminSignsPage() {
     <section className="page grid gap-6 lg:grid-cols-[260px_1fr]">
       <AdminSidebar />
       <div>
-        <h1 className="mb-8 text-4xl font-black text-white">Jol belgilerin basqariw</h1>
-        <DataTable headers={["Kod", "Ati", "Kategoriya", "Suwret URL"]} rows={signs.map((s) => [s.code, s.name, s.category, s.svgType])} />
+        <h1 className="mb-8 text-4xl font-black text-white">Jol belgilerin basqarıw</h1>
+        <DataTable headers={["Kod", "Atı", "Kategoriya", "Súwret URL"]} rows={signs.map((s) => [s.code, s.name, s.category, s.svgType])} />
       </div>
     </section>
   );

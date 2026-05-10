@@ -21,7 +21,7 @@ export function RoadSignCard({ sign }: { sign: SignCard }) {
       <span className="badge">{sign.category}</span>
       <h3 className="mt-3 text-lg font-bold text-white">{sign.name}</h3>
       <p className="mt-2 min-h-10 text-sm text-slate-400">{sign.description}</p>
-      <Link className="btn-ghost mt-5 w-full justify-center" href={`/signs/${sign.code}`}>Belgini ashiw</Link>
+      <Link className="btn-ghost mt-5 w-full justify-center" href={`/signs/${sign.code}`}>Belgini ashıw</Link>
     </article>
   );
 }
