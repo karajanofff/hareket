@@ -9,5 +9,5 @@ export const dynamic = "force-dynamic";
 export default async function AdminQuestionsPage() {
   if (!(await requireAdmin())) redirect("/login");
   const questions = await getQuestions();
-  return <section className="page grid gap-6 lg:grid-cols-[260px_1fr]"><AdminSidebar /><div><h1 className="mb-8 text-4xl font-black text-white">Test sorawların basqarıw</h1><DataTable headers={["Topic", "Question", "Correct"]} rows={questions.map((q) => [q.topic, q.question, q.correctOption])} /></div></section>;
+  return <section className="page grid gap-6 lg:grid-cols-[260px_1fr]"><AdminSidebar /><div><h1 className="mb-8 text-4xl font-black text-white">Test sorawların basqarıw</h1><DataTable headers={["Tema", "Soraw", "Durıs juwap"]} rows={questions.map((q) => [q.topic, q.question, q.correctOption])} /></div></section>;
 }

@@ -1,13 +1,13 @@
 const base = [
-  ["STOP belgisi", "STOP", "Ustunlıq", "Toqtaw shárt", "Transport tolıq toqtap, jol bos ekenin tekseredi.", "Kesilispe aldında hám qáwipli shıǵıslarda", "stop"],
-  ["Jol beriw", "YIELD", "Ustunlıq", "Ustun jolǵa jol beriw", "Haydawshı bas jol qatnasıwshılarına jol beredi.", "Kesilispe aldında", "yield"],
-  ["Jayaú ótpe jolı", "PED", "Informaciya", "Jayaúlar ótetuǵın aymaq", "Haydawshı tezlikti páseytip, jayaúǵa jol beredi.", "Zebra aldında", "pedestrian"],
-  ["Tezlik 50", "SPEED50", "Tıyım", "Maksimal tezlik 50 km/s", "Kórsetilgen tezlikten asıwǵa bolmaydı.", "Qala ishindegi aymaqlarda", "speed"],
-  ["Kirisiwge tıyım", "NOENTRY", "Tıyım", "Bul baǵıtta kirisiwge bolmaydı", "Bir baǵıtlı jolǵa qarsı kirisiwdi toqtatadı.", "Bir baǵıtlı jol shıǵısında", "noEntry"],
-  ["Balalar", "CHILDREN", "Eskertiw", "Mektep yamasa balalar aymaǵı", "Haydawshı ayrıqsha abay bolıwı kerek.", "Mektep, baqsha janında", "children"],
-  ["Parking", "PARK", "Informaciya", "Toqtap turıw ornı", "Transporttı belgilengen tártibte qaldırıw múmkin.", "Parking aymaǵında", "parking"],
-  ["Bas jol", "MAIN", "Ustunlıq", "Bas jol boylap háreket", "Kesilispelerde ustunlıq beredi.", "Bas jol baslanǵanda", "mainRoad"],
-  ["Toqtap turıwǵa tıyım", "NOPARK", "Tıyım", "Transport qaldırıwǵa bolmaydı", "Jol boyın bos saqlaw talap etiledi.", "Tıyım aymaǵında", "noParking"]
+  ["STOP belgisi", "STOP", "Ústinlik belgileri", "Toqtaw shárt", "Transport tolıq toqtap, jol bos ekenin tekseredi.", "Kesilispe aldında hám qáwipli shıǵıs ornında", "stop"],
+  ["Jol beriw", "YIELD", "Ústinlik belgileri", "Ústin jolǵa jol beriw", "Haydawshı bas jol qatnasıwshılarına jol beredi.", "Kesilispe aldında", "yield"],
+  ["Jayaú júrginshi ótpe jolı", "PED", "Axborot-kórsetkish belgiler", "Jayaú júrginshiler ótetuǵın aymaq", "Haydawshı tezlikti páseytip, jayaú júrginshige jol beredi.", "Jayaú júrginshi ótpe jolı aldında", "pedestrian"],
+  ["Tezlik shegarası 50", "SPEED50", "Tıyım salıwshı belgiler", "Maksimal tezlik 50 km/s", "Kórsetilgen tezlikten asıwǵa bolmaydı.", "Qala ishindegi aymaqlarda", "speed"],
+  ["Kirisiwge tıyım", "NOENTRY", "Tıyım salıwshı belgiler", "Bul baǵıtta kirisiwge bolmaydı", "Bir baǵıtlı jolǵa qarsı kirisiwdi toqtatadı.", "Bir baǵıtlı jol shıǵısında", "noEntry"],
+  ["Balalar", "CHILDREN", "Eskertiwshi belgiler", "Mektep yamasa balalar aymaǵı", "Haydawshı ayrıqsha abay bolıwı kerek.", "Mektep hám balalar baqshası janında", "children"],
+  ["Toqtap turıw ornı", "PARK", "Servis belgileri", "Transporttı toqtatıp turıw ornı", "Transporttı belgilengen tártipte qaldırıw múmkin.", "Toqtap turıw aymaǵında", "parking"],
+  ["Bas jol", "MAIN", "Ústinlik belgileri", "Bas jol boylap háreket", "Kesilispelerde ústinlik beredi.", "Bas jol baslanǵan jerde", "mainRoad"],
+  ["Toqtap turıwǵa tıyım", "NOPARK", "Tıyım salıwshı belgiler", "Transport qaldırıwǵa bolmaydı", "Jol boyın bos saqlaw talap etiledi.", "Tıyım salınǵan aymaqta", "noParking"]
 ];
 
 export const roadSigns = Array.from({ length: 25 }, (_, i) => {

@@ -4,7 +4,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Road Rules Video Platform",
+  title: "Jol qaǵıydaların úyreniw platforması",
   description: "Kompyuter grafikası járdeminde jol háreketi qaǵıydaların úyretiw platforması"
 };
 

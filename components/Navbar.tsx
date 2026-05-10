@@ -5,7 +5,7 @@ import { Car, LogOut, ShieldCheck } from "lucide-react";
 const nav = [
   ["Bas bet", "/"],
   ["Sabaqlar", "/lessons"],
-  ["Video dársler", "/videos"],
+  ["Video sabaqlar", "/videos"],
   ["Jol belgileri", "/signs"],
   ["Test", "/quiz"],
   ["Nátiyjeler", "/results"],
@@ -19,7 +19,7 @@ export async function Navbar() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
         <Link href="/" className="flex items-center gap-3 font-bold text-white">
           <span className="grid h-10 w-10 place-items-center rounded bg-cyan-400/15 text-cyan-200 ring-1 ring-cyan-300/30"><Car size={22} /></span>
-          <span>Road Rules Video</span>
+          <span>Jol qaǵıydaları</span>
         </Link>
         <nav className="hidden items-center gap-1 lg:flex">
           {nav.map(([label, href]) => <Link key={href} className="rounded px-3 py-2 text-sm text-slate-300 hover:bg-white/10 hover:text-white" href={href}>{label}</Link>)}

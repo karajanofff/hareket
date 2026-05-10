@@ -3,10 +3,10 @@ import { isValidYouTubeUrl } from "./youtube";
 
 export const registerSchema = z
   .object({
-    name: z.string().min(2, "Atıńız keminde 2 hárip bolıwı kerek"),
-    email: z.string().email("Email durıs emes"),
-    password: z.string().min(8, "Parol keminde 8 belgiden ibarat bolıwı kerek"),
-    confirmPassword: z.string().min(8)
+    name: z.string().min(2, "At maydanı bos bolmawı kerek"),
+    email: z.string().email("Email forması nadurıs"),
+    password: z.string().min(6, "Parol keminde 6 belgiden ibarat bolıwı kerek"),
+    confirmPassword: z.string().min(6, "Paroldı tastıyıqlaw maydanı bos bolmawı kerek")
   })
   .refine((data) => data.password === data.confirmPassword, {
     message: "Parollar sáykes emes",
@@ -14,17 +14,17 @@ export const registerSchema = z
   });
 
 export const loginSchema = z.object({
-  email: z.string().email("Email durıs emes"),
-  password: z.string().min(1, "Paroldı kiritiń")
+  email: z.string().email("Email forması nadurıs"),
+  password: z.string().min(1, "Parol maydanı bos bolmawı kerek")
 });
 
 export const videoLessonSchema = z.object({
-  title: z.string().min(3, "Video atı kerek"),
-  description: z.string().min(10, "Qısqa túsindirme kerek"),
-  youtubeUrl: z.string().refine(isValidYouTubeUrl, "YouTube link durıs emes"),
-  category: z.string().min(2, "Kategoriya tańlań"),
-  level: z.string().min(2, "Dáreje kerek"),
-  duration: z.string().min(2, "Dawamlılıq kerek"),
+  title: z.string().min(3, "Tema atı kirgiziliwi kerek"),
+  description: z.string().min(10, "Sıpatlama kirgiziliwi kerek"),
+  youtubeUrl: z.string().refine(isValidYouTubeUrl, "YouTube siltemesi nadurıs"),
+  category: z.string().min(2, "Kategoriya tańlanıwı kerek"),
+  level: z.string().min(2, "Dáreje kirgiziliwi kerek"),
+  duration: z.string().min(2, "Dawamlılıq kirgiziliwi kerek"),
   order: z.coerce.number().int().min(0)
 });
 

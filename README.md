@@ -1,52 +1,52 @@
-# road-rules-video-platform
+# Jol qaǵıydaların úyreniw platforması
 
-Diplom mavzusi: **“Kompyuter grafikasidan foydalanib yo‘l harakati qoidalarini o‘rgatuvchi platforma ishlab chiqish”**.
+Diplom teması: **“Kompyuter grafikasidan foydalanib yo‘l harakati qoidalarini o‘rgatuvchi platforma ishlab chiqish”**.
 
-Platforma Qoraqalpoq tilidagi premium dark automotive-learning web ilova bo‘lib, yo‘l harakati qoidalarini SVG yo‘l belgilar, YouTube video darslar, matnli darslar, testlar va progress grafiklari orqali o‘rgatadi.
+Bul platforma kompyuter grafikası járdeminde jol háreketi qaǵıydaların úyreniwge arnalǵan sanlı oqıw ortalıǵı. Paydalanıwshılar video sabaqlar, jol belgileri katalogı, matnli sabaqlar, test moduli hám kabinet arqalı qáwipsiz háreket mádeniyatın qáliplestiredi.
 
 ## Texnologiyalar
 
 - Next.js App Router, TypeScript, React
-- Tailwind CSS, shadcn uslubidagi komponentlar
-- Prisma ORM, SQLite lokal baza, PostgreSQLga ko‘chirishga tayyor model
-- Zod validatsiya, bcryptjs, cookie/session auth
-- YouTube iframe embed, SVG road signs
+- Tailwind CSS hám komponentlik interfeys
+- Prisma ORM hám SQLite lokal maǵlıwmatlar bazası
+- Zod validaciyası, bcryptjs hám cookie/session autentifikaciyası
+- YouTube iframe video sabaqları hám SVG jol belgileri
 - Recharts, Lucide React, Framer Motion
 
-## Asosiy modullar
+## Tiykarǵı modullar
 
-- **YouTube video darslar**: `/videos`, `/videos/[id]`, responsive iframe player, category filter, search, watched progress.
-- **Yo‘l belgilar katalogi**: `/signs`, `/signs/[id]`, sifatli SVG belgilar va real qo‘llanish izohlari.
-- **Test moduli**: `/quiz`, random 10 savol, 4 variant, explanation va natijani bazaga saqlash.
-- **Kabinet va natijalar**: `/dashboard`, `/results`, video progress, test statistikasi, Recharts grafiklari.
+- **Video sabaqlar**: `/videos`, `/videos/[id]`, responsive iframe player, kategoriya boyınsha filtrlew, izlew hám kórildi dep belgilew.
+- **Jol belgileri katalogı**: `/signs`, `/signs/[id]`, SVG belgiler, belginiń mánisi hám qollanılıw ornı.
+- **Test moduli**: `/quiz`, 10 soraw, 4 juwap variantı, túsindirme hám nátiyjeni maǵlıwmatlar bazasına saqlaw.
+- **Kabinet hám nátiyjeler**: `/dashboard`, `/results`, video ilgerilewi, test statistikası hám grafikalar.
 - **Admin panel**: `/admin`, `/admin/videos`, `/admin/lessons`, `/admin/signs`, `/admin/questions`, `/admin/users`.
 
-## Ma’lumotlar bazasi
+## Maǵlıwmatlar bazası
 
-Prisma modellari: `User`, `Lesson`, `VideoLesson`, `VideoProgress`, `RoadSign`, `QuizQuestion`, `QuizResult`, `LessonProgress`.
+Prisma modelleri: `User`, `Lesson`, `VideoLesson`, `VideoProgress`, `RoadSign`, `QuizQuestion`, `QuizResult`, `LessonProgress`.
 
-Seed tarkibi:
+Seed quramı:
 
-- 6 ta matnli dars
-- 12 ta YouTube video dars
-- 25 ta yo‘l belgisi
-- 40 ta test savoli
-- 1 ta admin user
-- 2 ta oddiy demo user
+- 6 matnli sabaq
+- 12 YouTube video sabaq
+- 25 jol belgisi
+- 40 test sorawı
+- 1 admin paydalanıwshı
+- 2 ápiwayı demo paydalanıwshı
 
-## Ishga tushirish
+## Iske túsiriw
 
 ```bash
 npm install
-npx prisma migrate dev --name init
-npx prisma db seed
+npx prisma migrate deploy
+npm run seed
 npm run dev
 ```
 
-Lokal manzil:
+Lokal mánzil:
 
 ```text
-http://localhost:3001
+http://localhost:10000
 ```
 
 Demo admin:
@@ -58,41 +58,29 @@ admin12345
 
 ## Render deploy
 
-Render.com orqali ulash uchun loyihada `render.yaml` tayyor:
+`render.yaml` faylı Render arqalı deploy etiw ushın tayarlanǵan:
 
-- Service type: `web`
+- Servis túri: `web`
 - Runtime: `node`
 - Plan: `free`
-- Build Command: `npm install && npx prisma generate && npm run build`
-- Start Command: `npx prisma migrate deploy && npx prisma db seed && npm start`
+- Qurıw buyrıǵı: `npm ci --include=dev && npx prisma generate && npm run build`
+- Iske túsiriw buyrıǵı: `npx prisma migrate deploy && npm run seed && npm start`
 
-Render Dashboard orqali ulash:
+Render kabineti arqalı ulaw:
 
-1. Loyihani GitHub repositoryga yuklang.
-2. Render.com saytida **New +** tugmasini bosing.
-3. **Blueprint** tanlang.
-4. GitHub repositoryni ulang.
-5. Render `render.yaml` faylini avtomatik o‘qiydi.
-6. Deploy tugagach, berilgan `onrender.com` link orqali platformani oching.
+1. Joybardı GitHub repositoryge júkleń.
+2. Render saytında **New +** túymesin basıń.
+3. **Blueprint** tańlań.
+4. GitHub repositorydi ulań.
+5. Render `render.yaml` faylın avtomatik oqıydı.
+6. Deploy tamamlanǵannan keyin berilgen `onrender.com` siltemesi arqalı platformanı ashıń.
 
-Muhim: hozirgi konfiguratsiya diplom himoyasi uchun SQLite demo deploy qiladi. Render free service filesystemi doimiy saqlanmaydi, shuning uchun start paytida migration va seed avtomatik ishlaydi. Production uchun Render PostgreSQLga o‘tkazish tavsiya etiladi.
+Esletpe: házirgi konfiguraciya diplom kórsetiw ushın SQLite demo deploy etedi. Render free service filesystemi turaqlı saqlanbaydı, sonıń ushın start waqtında migration hám seed avtomatik isleydi. Turaqlı production ushın PostgreSQL maǵlıwmatlar bazasına ótiw usınıladı.
 
-Build Command:
-
-```bash
-npm install && npx prisma generate && npm run build
-```
-
-Start Command:
-
-```bash
-npm start
-```
-
-Render Environment Variables:
+Environment Variables:
 
 ```text
 DATABASE_URL=file:./dev.db
-AUTH_SECRET=Render avtomatik generate qiladi
+AUTH_SECRET=Render avtomatik jaratadı
 NODE_ENV=production
 ```

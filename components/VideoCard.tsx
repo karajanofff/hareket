@@ -18,7 +18,7 @@ export function VideoCard({ video, watched = false }: { video: Video; watched?: 
         <div className="mb-3 flex flex-wrap gap-2 text-xs"><span className="badge">{video.category}</span><span className="badge-yellow">{video.level}</span></div>
         <h3 className="line-clamp-2 text-lg font-bold text-white">{video.title}</h3>
         <p className="mt-2 line-clamp-2 text-sm text-slate-400">{video.description}</p>
-        <Link className="btn-primary mt-5 w-full justify-center" href={`/videos/${video.slug}`}>Videonı kóriw</Link>
+        <Link className="btn-primary mt-5 w-full justify-center" href={`/videos/${video.slug}`}>Videonı ashıw</Link>
       </div>
     </article>
   );

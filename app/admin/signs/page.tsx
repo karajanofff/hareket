@@ -9,5 +9,5 @@ export const dynamic = "force-dynamic";
 export default async function AdminSignsPage() {
   if (!(await requireAdmin())) redirect("/login");
   const signs = await getSigns();
-  return <section className="page grid gap-6 lg:grid-cols-[260px_1fr]"><AdminSidebar /><div><h1 className="mb-8 text-4xl font-black text-white">Jol belgilerin basqarıw</h1><DataTable headers={["Code", "Name", "Category", "SVG"]} rows={signs.map((s) => [s.code, s.name, s.category, s.svgType])} /></div></section>;
+  return <section className="page grid gap-6 lg:grid-cols-[260px_1fr]"><AdminSidebar /><div><h1 className="mb-8 text-4xl font-black text-white">Jol belgilerin basqarıw</h1><DataTable headers={["Kod", "Atı", "Kategoriya", "SVG túri"]} rows={signs.map((s) => [s.code, s.name, s.category, s.svgType])} /></div></section>;
 }
