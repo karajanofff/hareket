@@ -34,8 +34,8 @@ async function main() {
   await prisma.roadSign.deleteMany();
   await prisma.roadSign.createMany({ data: roadSigns });
 
-  await prisma.quizQuestion.deleteMany();
-  await prisma.quizQuestion.createMany({ data: quizQuestions });
+  const questionCount = await prisma.quizQuestion.count();
+  if (questionCount === 0) await prisma.quizQuestion.createMany({ data: quizQuestions });
 }
 
 main()
