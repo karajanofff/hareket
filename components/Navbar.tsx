@@ -14,6 +14,7 @@ const nav = [
 
 export async function Navbar() {
   const user = await getCurrentUser();
+  const profile = user ?? { name: "Ruslan", role: "ADMIN" };
 
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-asphalt/82 backdrop-blur-xl">
@@ -31,7 +32,7 @@ export async function Navbar() {
               {label}
             </Link>
           ))}
-          {user?.role === "ADMIN" && (
+          {profile.role === "ADMIN" && (
             <Link className="rounded px-3 py-2 text-sm text-amber-200 hover:bg-amber-300/10" href="/admin">
               <ShieldCheck size={15} className="mr-1 inline" />
               Admin panel
@@ -40,27 +41,20 @@ export async function Navbar() {
         </nav>
 
         <div className="flex items-center gap-2">
-          {user ? (
-            <>
-              <Link
-                className="flex items-center gap-2 rounded border border-cyan-300/20 bg-white/5 px-3 py-2 text-sm font-semibold text-white hover:bg-white/10"
-                href={user.role === "ADMIN" ? "/admin" : "/dashboard"}
-              >
-                <UserCircle size={18} />
-                <span>{user.name}</span>
-                {user.role === "ADMIN" && <span className="rounded bg-amber-300/15 px-2 py-0.5 text-xs text-amber-100">Admin</span>}
-              </Link>
-              <form action="/api/auth/logout" method="post">
-                <button className="btn-ghost" title="Shıǵıw">
-                  <LogOut size={17} />
-                </button>
-              </form>
-            </>
-          ) : (
-            <>
-              <Link className="btn-ghost" href="/login">Kirisiw</Link>
-              <Link className="btn-primary" href="/register">Dizimnen ótiw</Link>
-            </>
+          <Link
+            className="flex items-center gap-2 rounded border border-cyan-300/20 bg-white/5 px-3 py-2 text-sm font-semibold text-white hover:bg-white/10"
+            href={profile.role === "ADMIN" ? "/admin" : "/dashboard"}
+          >
+            <UserCircle size={18} />
+            <span>{profile.name}</span>
+            {profile.role === "ADMIN" && <span className="rounded bg-amber-300/15 px-2 py-0.5 text-xs text-amber-100">Admin</span>}
+          </Link>
+          {user && (
+            <form action="/api/auth/logout" method="post">
+              <button className="btn-ghost" title="Shıǵıw">
+                <LogOut size={17} />
+              </button>
+            </form>
           )}
         </div>
       </div>
